@@ -4,6 +4,9 @@ A real-time sentiment analysis tool for monitoring social media posts or news ar
 
 Built using **Vue.js**, **Flask**, and **Natural Language Processing (NLP)** to analyze the text and provide sentiment results.
 
+<img width="1037" alt="image" src="https://github.com/user-attachments/assets/437bf868-c771-4b4b-919c-c1784f098d09" />
+
+
 ## Project Overview
 
 This application allows you to analyze the sentiment of any given text input. The front-end is built with **Vue.js**, which sends the input text to a **Flask** backend. The backend processes the text using a basic **sentiment analysis algorithm** and returns a sentiment score (positive, negative, or neutral). The result is then displayed on the front-end in real-time.
