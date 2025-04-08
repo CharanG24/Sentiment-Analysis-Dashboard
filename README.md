@@ -5,21 +5,6 @@ A real-time sentiment analysis tool for monitoring social media posts or news ar
 Built using **Vue.js**, **Flask**, and **Natural Language Processing (NLP)** to analyze the text and provide sentiment results.
 
 ---
-
-## Table of Contents
-
-- [Project Overview](#project-overview)
-- [Tech Stack](#tech-stack)
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
-- [API](#api)
-- [Contributing](#contributing)
-- [License](#license)
-
----
-
 ## Project Overview
 
 This application allows you to analyze the sentiment of any given text input. The front-end is built with **Vue.js**, which sends the input text to a **Flask** backend. The backend processes the text using a basic **sentiment analysis algorithm** and returns a sentiment score (positive, negative, or neutral). The result is then displayed on the front-end in real-time.
@@ -86,59 +71,49 @@ cd frontend
 ```
 Install dependencies:
 
-bash
-Copy
-Edit
+```bash
 npm install
+```
+
 Set up the backend:
 
 Navigate to the backend directory:
 
-bash
-Copy
-Edit
+```bash
 cd ../backend
+```
+
 Create a Python virtual environment (optional but recommended):
 
-bash
-Copy
-Edit
+```bash
 python -m venv venv
+```
+
 Activate the virtual environment:
 
-For Windows:
-
-bash
-Copy
-Edit
+```bash
 venv\Scripts\activate
-For macOS/Linux:
+```
 
-bash
-Copy
-Edit
-source venv/bin/activate
 Install required Python packages:
 
-bash
-Copy
-Edit
+```bash
 pip install -r requirements.txt
+```
+
 Usage
 1. Start the Backend (Flask API)
 To run the Flask API locally, use the following command in the backend directory:
 
-bash
-Copy
-Edit
+```bash
 python app.py
 The backend will be running on http://localhost:5000.
+```
 
 2. Start the Frontend (Vue.js App)
 To run the Vue.js app locally, use the following command in the frontend directory:
 
-bash
-Copy
-Edit
+```bash
 npm run serve
 The frontend will be accessible at http://localhost:8080.
+```
