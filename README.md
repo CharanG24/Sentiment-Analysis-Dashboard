@@ -4,12 +4,9 @@ A real-time sentiment analysis tool for monitoring social media posts or news ar
 
 Built using **Vue.js**, **Flask**, and **Natural Language Processing (NLP)** to analyze the text and provide sentiment results.
 
----
 ## Project Overview
 
 This application allows you to analyze the sentiment of any given text input. The front-end is built with **Vue.js**, which sends the input text to a **Flask** backend. The backend processes the text using a basic **sentiment analysis algorithm** and returns a sentiment score (positive, negative, or neutral). The result is then displayed on the front-end in real-time.
-
----
 
 ## Tech Stack
 
@@ -22,13 +19,8 @@ This application allows you to analyze the sentiment of any given text input. Th
   - Flask
   - Python (for Sentiment Analysis)
 
-- **Database:**
-  - No database is required as the app only performs text sentiment analysis.
-
 - **NLP:**
-  - Custom sentiment analysis logic or any open-source NLP library like `TextBlob` or `VADER`.
-
----
+  - open-source NLP library  `TextBlob`
 
 ## Features
 
@@ -37,20 +29,6 @@ This application allows you to analyze the sentiment of any given text input. Th
 - User-friendly interface with clear sentiment results.
 - Easily extensible for future features, such as social media integration, advanced NLP models, or even storing past results.
 
----
-
-## Prerequisites
-
-- **Node.js** (for running Vue.js)
-  - Download from [Node.js Official Website](https://nodejs.org/).
-  
-- **Python** (for running Flask API)
-  - Download from [Python Official Website](https://www.python.org/).
-
-- **Flask** and NLP library (for the backend)
-  - Install Flask and your preferred NLP library using pip.
-
----
 
 ## Installation
 
