@@ -4,6 +4,8 @@ A real-time sentiment analysis tool for monitoring social media posts or news ar
 
 Built using **Vue.js**, **Flask**, and **Natural Language Processing (NLP)** to analyze the text and provide sentiment results.
 
+Link: https://sentiment-analysis-dashboard-pi.vercel.app/
+
 <img width="1037" alt="image" src="https://github.com/user-attachments/assets/437bf868-c771-4b4b-919c-c1784f098d09" />
 
 
