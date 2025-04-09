@@ -13,10 +13,13 @@
       </div>
       <div v-if="sentiment !== null" class="result">
         <p class="sentiment-text">
-          Sentiment Score: <strong>{{ sentiment }}</strong>
+          Polarity: <strong>{{ sentiment.polarity }}</strong>
         </p>
-        <p v-if="sentiment === 0" class="neutral">This text has a neutral tone.</p>
-        <p v-else-if="sentiment > 0" class="positive">This text has a positive sentiment!</p>
+        <p class="sentiment-text">
+          Subjectivity: <strong>{{ sentiment.subjectivity }}</strong>
+        </p>
+        <p v-if="sentiment.polarity === 0" class="neutral">This text has a neutral tone.</p>
+        <p v-else-if="sentiment.polarity > 0" class="positive">This text has a positive sentiment!</p>
         <p v-else class="negative">This text has a negative sentiment.</p>
       </div>
     </div>
@@ -39,7 +42,7 @@ export default {
         body: JSON.stringify({ text: this.inputText }),
       });
       const data = await response.json();
-      this.sentiment = data.sentiment;
+      this.sentiment = data; // Now expecting an object with polarity and subjectivity
     }
   }
 }
