@@ -33,7 +33,7 @@ export default {
   },
   methods: {
     async analyzeSentiment() {
-      const response = await fetch('https://your-backend-yx3u.onrender.com', {
+      const response = await fetch('https://your-backend-yx3u.onrender.com/analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text: this.inputText }),
