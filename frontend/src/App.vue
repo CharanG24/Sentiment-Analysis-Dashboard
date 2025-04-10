@@ -42,7 +42,7 @@ export default {
         body: JSON.stringify({ text: this.inputText }),
       });
       const data = await response.json();
-      this.sentiment = data; // Now expecting an object with polarity and subjectivity
+      this.sentiment = data; 
     }
   }
 }
